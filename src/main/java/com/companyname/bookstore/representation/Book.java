@@ -1,9 +1,11 @@
 package com.companyname.bookstore.representation;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.hibernate.validator.constraints.Length;
 
 public class Book {
 
+    @Length(max = 4)
     private String id;
     private String authorId;
 

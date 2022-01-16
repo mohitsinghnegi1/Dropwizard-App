@@ -7,6 +7,7 @@ public class Book {
 
     @Length(max = 4)
     private String id;
+    @Length(max = 4)
     private String authorId;
 
     public Book() {
